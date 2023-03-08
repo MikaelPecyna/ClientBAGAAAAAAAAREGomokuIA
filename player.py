@@ -6,12 +6,12 @@ class Player(c.Client):
 
         def emitStroke(self, x, y):
             #Envoie du coup au serveur
-            self.send([Client.C_EMIT_STROKE, this.gameId , this.playerId , x , y])
+            self.send([Client.C_EMIT_STROKE, self.gameId , self.playerId , x , y])
 
 
         def register(self):
             #Envoie du gameId au serveur
-            self.send([Client.C_PLAYER_REGISTERED, this.gameId])
+            self.send([Client.C_PLAYER_REGISTERED, self.gameId, this.gameId])
 
             # On attend la reponse du serveur pour savoir si le joueur est bien enregistré
             recv = self.receive()
