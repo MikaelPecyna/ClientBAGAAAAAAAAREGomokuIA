@@ -17,8 +17,7 @@ go.startGame()
 
 while (True):# TODO : A modifier pour quitter la boucle quand la partie est finie
     (x,y) = go.receiveValidation()
-    # TODO : Verification de la validite du coup
     go.sendValidation(1)
 
-    
+
 

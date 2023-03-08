@@ -1,4 +1,4 @@
-import Client as c 
+import client as c 
 
 # Classe GameOwner qui herite de la classe Client
 

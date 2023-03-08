@@ -6,6 +6,7 @@ import player as p
 gameId = 123
 addresse = "localhost"
 port = 1234
+type = 1
 ############################################################################################################
 
 myPlayer = p.Player(addresse, port , gameId)

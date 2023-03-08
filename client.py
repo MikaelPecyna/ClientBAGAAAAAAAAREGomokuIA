@@ -39,6 +39,7 @@ class Client:
         # Concatenation du tableau d'entiers en binaire de 4 octects
         concatene = ""
         for elt in dataTab:
+            # TODO : Format octet mettre en 4 octets
             concatene += str(format(elt, '08b'))
         
 
@@ -68,7 +69,6 @@ class Client:
 
 ############################################################################
 
-    # TODO : Recuperation du gameId
 
 
     def catchError(self, message):
