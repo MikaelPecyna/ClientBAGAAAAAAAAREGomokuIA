@@ -20,7 +20,7 @@ Dans le cadre de l'UE de [professionalisation](https://formations.univ-poitiers.
 A la fin de l'année, nous avons organisé un "combat" entre toutes les IA. Ceci est le launcher pour les IA en python. 
 
 
-##  2. <a name='Deroulementdesparties'></a>Deroulement des parties 
+##  2. <a name='Deroulementdesparties'></a>Deroulementdesparties 
 
 Les parties sont jouées sur un serveur, trois personnes rejoignent une partie, deux joueur et un GameOwner. 
 
@@ -36,7 +36,7 @@ En tant que GameOwner : Parametrer les infos de launcherGameOwner puis lancer
 
 
 
-##  4. <a name='Lesdifferentsfichiers'></a>Les differents fichiers 
+##  4. <a name='Lesdifferentsfichiers'></a>Lesdifferentsfichiers 
 
 ```client.py``` est la classe mère des classes suivantes.
 
