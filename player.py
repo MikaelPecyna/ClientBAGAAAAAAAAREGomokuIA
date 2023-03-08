@@ -16,13 +16,24 @@ class Player(c.Client):
             recv = self.receive()
 
 
-            """Verification de la reception du playerId
-            Si l'ordre recu est C_REGISTER_PLAYER , le serveur renvoie le playerId
-            Si le gameId est correct, le serveur renvoie un tableau de 2 entiers
+            
+            # TODO  : Expliquer le fonctionnement de cette condition
 
-            """
             if(recv[0] == Client.C_REGISTER_PLAYER and recv[1] == this.gameId):
-                this.playerId = self.receive()[2]
+                this.playerId = recv[2]
             else: 
+                # TODO : Gestion de l'erreur
                 print("Erreur lors de la reception du playerId")
+        
+        def recvStroke(self):
+            
+            recv = self.receive()
+
+            # TODO  : Expliquer le fonctionnement de cette condition
+            if(recv[0] == Client.S_SEND_STROKE and recv[1] == this.gameId):
+                return (recv[2] , recv[3])
+            else:
+                # TODO : Gestion de l'erreur
+                print("Erreur lors de la reception du coup")
+
         
