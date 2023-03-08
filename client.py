@@ -2,6 +2,21 @@
 import socket
 
 class Client:
+
+    # Definition des variable de classe
+    
+    C_INIT_GAME = 0
+    S_REQUEST_STROKE = 1
+    S_SEND_STROKE = 2
+    S_REQUEST_VALIDATION = 3
+    S_GAME_CREATED = 4
+    C_START_GAME = 5
+    C_EMIT_STROKE = 6
+    C_ANSWER_VALIDATION = 7
+    C_REGISTER_PLAYER = 8
+    C_PLAYER_REGISTERED = 9
+    S_ERROR_REQUEST = 10
+    
     def __init__(self, host, port, gameId):
         # Connexion au serveur
         self.host = host
@@ -56,8 +71,6 @@ class Client:
     # TODO : Recuperation du gameId
 
 
-
-
-bits = "000000000000000000000000000000010000000000000000000000000000001000000000000000000000000000000011"
-
-
+    def catchError(self, message):
+        print(message)
+        self.close()
